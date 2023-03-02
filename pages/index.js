@@ -42,7 +42,7 @@ export default function Home() {
           <div className='text-center p-10'>
             <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Peter Kyeyune</h2>
             <h3 className='text-2xl py-2 md:text-3xl'>Developer and Designer</h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto dark:text-gray-400'>
               Freelancer providing services for programming needs. Join me down below and let's get cracking!!
             </p>
           </div>
@@ -59,13 +59,13 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1'>Services I offer</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>Since the beginning of my journey as a Freelance developer, I have done remote work for
+            <p className='text-md py-2 leading-8 text-gray-800 dark:text-gray-400'>Since the beginning of my journey as a Freelance developer, I have done remote work for
               <span className="text-teal-500"> agencies </span>
               consulted for <span className="text-teal-500">startups </span>
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               I offer from a wide range of services, including brand design, programming and teaching.
             </p>
           </div>
@@ -108,7 +108,7 @@ export default function Home() {
         <section>
           <div>
             <h3 className='text-3xl py-1'>Portfolio</h3>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               Since the beginning of my journey as a freelance designer and
               developer, I've done remote work for
               <span className="text-teal-500"> agencies </span>
@@ -116,31 +116,50 @@ export default function Home() {
               and collaborated with talanted people to create digital products
               for both business and consumer use.
             </p>
-            <p className="text-md py-2 leading-8 text-gray-800 ">
+            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-400">
               I offer from a wide range of services, including brand design,
               programming and teaching.
             </p>
           </div>
-          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-            <div className='basis-1/3'>
-              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout='responsive'/>
+          <div className='flex flex-col gap-12 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/4'>
+              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'}/>
             </div>
-            <div className='basis-1/3'>
+            <div className='basis-1/4'>
               <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'}/>
             </div>
-            <div className='basis-1/3'>
+            <div className='basis-1/4'>
               <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'}/>
             </div>
-            <div className='basis-1/3'>
+            <div className='basis-1/4'>
               <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'}/>
             </div>
-            <div className='basis-1/3'>
+            <div className='basis-1/4'>
               <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'}/>
             </div>
-            <div className='basis-1/3'>
+            <div className='basis-1/4'>
               <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'}/>
             </div>
           </div>
+        </section>
+        <section>
+          <footer className='p-4 bg-white rounded-lg shadow-lg md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800'>
+            <span className='text-sm text-gray-800 sm:text-center dark:text-gray-400'>@ 2023 <a href='#' className='hover:underline'>DevelopedByMozart</a>. All Rights Reserved. </span>
+            <ul className='flex flex-wrap items-center mt-3 text-sm text-gray-800 dark:text-gray-400 sm:mt-0'>
+              <li>
+                <a href='#' className='mr-4 hover:underline md:mr-6'>About</a>
+              </li>
+              <li>
+                <a href='#' className='mr-4 hover:underline md:mr-6'>Projects</a>
+              </li>
+              <li>
+                <a href='https://github.com/Mozart299' className='mr-4 hover:underline md:mr-6'>Github</a>
+              </li>
+              <li>
+                <a href='#' className='mr-4 hover:underline md:mr-6'>Contact</a>
+              </li>
+            </ul>
+          </footer>
         </section>
       </main>
     </div>
