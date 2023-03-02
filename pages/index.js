@@ -12,6 +12,7 @@ import web3 from '../public/web3.png';
 import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
+import myresume from '../public/PeterResume.pdf';
 import {useState} from 'react';
 
 
@@ -35,7 +36,7 @@ export default function Home() {
                 <BsFillMoonStarsFill onClick={() =>setDarkMode(!darkMode)} className='cursor-pointer text-2xl' />
               </li>
               <li>
-                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a>
+                <a className='bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href={myresume} download='myresume'>Resume</a>
               </li>
             </ul>
           </nav>
@@ -156,7 +157,7 @@ export default function Home() {
                 <a href='https://github.com/Mozart299' className='mr-4 hover:underline md:mr-6'>Github</a>
               </li>
               <li>
-                <a href='#' className='mr-4 hover:underline md:mr-6'>Contact</a>
+                <a href='#' target='_blank' className='mr-4 hover:underline md:mr-6'>Contact</a>
               </li>
             </ul>
           </footer>
